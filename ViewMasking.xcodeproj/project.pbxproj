@@ -13,6 +13,8 @@
 		33A2937D2AC8618C008D9B9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A2937B2AC8618C008D9B9C /* Main.storyboard */; };
 		33A2937F2AC8618D008D9B9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33A2937E2AC8618D008D9B9C /* Assets.xcassets */; };
 		33A293822AC8618D008D9B9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A293802AC8618D008D9B9C /* LaunchScreen.storyboard */; };
+		33A2938A2AC862BD008D9B9C /* firebase.png in Resources */ = {isa = PBXBuildFile; fileRef = 33A293892AC862BD008D9B9C /* firebase.png */; };
+		33A2938D2AC87203008D9B9C /* SwiftSVG in Frameworks */ = {isa = PBXBuildFile; productRef = 33A2938C2AC87203008D9B9C /* SwiftSVG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		33A2937E2AC8618D008D9B9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33A293812AC8618D008D9B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33A293832AC8618D008D9B9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33A293892AC862BD008D9B9C /* firebase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = firebase.png; path = ../../../Downloads/firebase.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33A2938D2AC87203008D9B9C /* SwiftSVG in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +63,7 @@
 				33A293752AC8618C008D9B9C /* AppDelegate.swift */,
 				33A293772AC8618C008D9B9C /* SceneDelegate.swift */,
 				33A293792AC8618C008D9B9C /* ViewController.swift */,
+				33A293892AC862BD008D9B9C /* firebase.png */,
 				33A2937B2AC8618C008D9B9C /* Main.storyboard */,
 				33A2937E2AC8618D008D9B9C /* Assets.xcassets */,
 				33A293802AC8618D008D9B9C /* LaunchScreen.storyboard */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = ViewMasking;
+			packageProductDependencies = (
+				33A2938C2AC87203008D9B9C /* SwiftSVG */,
+			);
 			productName = ViewMasking;
 			productReference = 33A293722AC8618C008D9B9C /* ViewMasking.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 33A293692AC8618C008D9B9C;
+			packageReferences = (
+				33A2938B2AC87203008D9B9C /* XCRemoteSwiftPackageReference "SwiftSVG" */,
+			);
 			productRefGroup = 33A293732AC8618C008D9B9C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33A2938A2AC862BD008D9B9C /* firebase.png in Resources */,
 				33A293822AC8618D008D9B9C /* LaunchScreen.storyboard in Resources */,
 				33A2937F2AC8618D008D9B9C /* Assets.xcassets in Resources */,
 				33A2937D2AC8618C008D9B9C /* Main.storyboard in Resources */,
@@ -358,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		33A2938B2AC87203008D9B9C /* XCRemoteSwiftPackageReference "SwiftSVG" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mchoe/SwiftSVG";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		33A2938C2AC87203008D9B9C /* SwiftSVG */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33A2938B2AC87203008D9B9C /* XCRemoteSwiftPackageReference "SwiftSVG" */;
+			productName = SwiftSVG;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 33A2936A2AC8618C008D9B9C /* Project object */;
 }
